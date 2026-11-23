@@ -14,7 +14,7 @@ machine vision or embedded AI.
 
 | Project | What it shows |
 |---|---|
-| [**traffic-sign-recognition**](https://github.com/muemara1/traffic-sign-recognition) | Traffic sign classifier (GTSRB, 43 classes) at **98.6 %** test accuracy, deployed as an **INT8 ONNX** model: 3.6× smaller, **0.21 ms** per image on one CPU thread, with a standalone predictor that needs no PyTorch |
+| [**traffic-sign-recognition**](https://github.com/muemara1/traffic-sign-recognition) | Two-stage pipeline for full road photos: a **YOLO11n** detector finds the signs (**99.2 %** found and correctly named, 95.7 % recall on signs under 24 px), then a CNN classifier names them (**98.6 %** on GTSRB). Both run as **ONNX** models with no PyTorch; the INT8 classifier needs **0.21 ms** per sign on one CPU thread |
 | [**bearing-fault-detection**](https://github.com/muemara1/bearing-fault-detection) | Predictive maintenance on CWRU vibration data: an autoencoder trained on **healthy data only** detects **100 %** of faults with **0.9 %** false alarms; Random Forest and 1D CNN compared at a new motor load |
 | [**casting-defect-detection**](https://github.com/muemara1/casting-defect-detection) | Visual quality inspection of metal castings with a PyTorch CNN: **97.0 %** test accuracy, **97.6 %** of defective parts caught |
 | [**ML**](https://github.com/muemara1/ML) | My learning notebooks: PyTorch for computer vision (FashionMNIST CNN at 87.6 % vs 84.0 % linear baseline) and how LLMs work inside |
@@ -30,7 +30,7 @@ machine vision or embedded AI.
 
 ### Tech
 
-- **AI / ML:** Python · PyTorch · CNNs · computer vision · anomaly detection · ONNX / INT8 quantization · scikit-learn · Jupyter
+- **AI / ML:** Python · PyTorch · CNNs · computer vision · object detection (YOLO) · anomaly detection · ONNX / INT8 quantization · scikit-learn · Jupyter
 - **Embedded:** C · Embedded C (MISRA) · FreeRTOS · AVR ATmega32 · ARM Cortex-M4 (TM4C123)
 - **Interfaces:** UART · SPI · I2C · CAN · LIN · ADC · PWM · timers · interrupts
 - **Tools:** Git · Keil · IAR Embedded Workbench · Proteus · MATLAB
