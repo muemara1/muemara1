@@ -39,4 +39,4 @@ machine vision or embedded AI.
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/muemara/) · mu.emara1@gmail.com · Arabic (native) · English · German (B1)
+[LinkedIn](https://www.linkedin.com/in/muemara/) · [Hugging Face](https://huggingface.co/muemara) · mu.emara1@gmail.com · Arabic (native) · English · German (B1)
